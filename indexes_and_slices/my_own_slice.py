@@ -1,5 +1,8 @@
 class List:
     """
+        List, Tuple or String are examples of
+          sequence objects.
+
         Sequence is an object which implement
          __getitem__ and __len__ methods.
 
