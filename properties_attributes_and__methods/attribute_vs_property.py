@@ -47,3 +47,25 @@ mark.email = GOOD_EMAIL
 print(mark.email)
 
 mark.email = WRONG_EMAIL
+
+"""
+   Getter and setter should be used, because
+      function has to do one thing only
+
+      Example:
+          # WRONG CODE
+          def set_email(self, email):
+              if not is_email(new_email):                                                                                                                             
+                  return False                                                                                                                                        
+              self._email = new_email
+              return False
+          
+          # USAGE
+          if object.set_email("abc"):
+              ... do something ...   
+
+   In this example set_email function was doing 
+      two things:
+           1. setting value
+           2. checking is value correct
+"""
