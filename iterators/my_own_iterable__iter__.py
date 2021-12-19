@@ -8,7 +8,7 @@
         creating iterable objects in python
        
 """
-# Let's imagine a object which should generate
+# Lets imagine an object which should generate
 #  dates from desired range, example:
 #    since 10-10-2021
 #    till  15-12-2021

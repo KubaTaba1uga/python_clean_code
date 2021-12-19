@@ -1,15 +1,15 @@
 """
     Iteration protocol, checks object for:
-        1. __next__ or __iter__
-			or 
-        2. __len__ and __getitem__
+        1.  __next__ and __iter__
+				 or
+		2. __iter__
 
-    According to 1. and 2. there are three ways of
+    According to this there are two ways of
         creating iterable objects in python
        
 """
 
-# Let's imagine a object which should generate
+# Lets imagine an object which should generate
 #  dates from desired range, example:
 #    since 10-10-2021
 #    till  15-12-2021
