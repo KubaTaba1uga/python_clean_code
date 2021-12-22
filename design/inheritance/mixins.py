@@ -1,5 +1,6 @@
 """
-        Mixin is a class, which extends other classes.
+        Mixin is a class, which encapsulates common behaviour, 
+                 with goal of making the code reusable.
 
         On it's own it is useless, but it provides reusable
                 machanism, which goal is to extend class behaviours. 
