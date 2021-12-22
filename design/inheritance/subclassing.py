@@ -1,5 +1,5 @@
 """
-        Inheritance should be used to specialize objects by
+        Subclassing should be used to specialize objects by
             creating detailed abstractions starting from based ones.
 """
 

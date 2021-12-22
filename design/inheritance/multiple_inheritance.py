@@ -1,12 +1,28 @@
 """
-        Multiple inheritance should be used for Mixins.
+        Multiple inheritance should be used for Mixins or Inheritance Injections.
 
-        Multiple inheritance order is read from left to right,
-                so class mostly on the left is first, when interpreter
-                is looking for attribute or method. If it finds match,
-                it is not searching further (interpreter).
+        Multiple inheritance order is read from top to bottom,
+                it is possible thanks to linearization of all classes
+                involved into inheritance.
+                Use help to check inheritance line.
+                      Example:
+                                help (BA)
 
-        Multiple inheritance order could be shown using <class>.mro().
+                                Help on class BA in module __main__:
+
+                                                class BA(B, A)
+                                                 |  Method resolution order:
+                                                 |      BA
+                                                 |      B
+                                                 |      A
+                                                 |      Top
+                                                 |      builtins.object
+
+        When interpreter is looking for attribute or method, 
+                it makes list of all objects in order. 
+               Child (class who inherit others) is always checked first. 
+
+        Multiple inheritance order could be shown also using <class>.mro().
 """
 
 
