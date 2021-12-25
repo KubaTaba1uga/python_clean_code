@@ -29,7 +29,6 @@
 #       Example:
 #               JsonEventParser would have
 #                       from_xml
-
 #               XmlEventParser would have
 #                       from_json
 class EventParser:
