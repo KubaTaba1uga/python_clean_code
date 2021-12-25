@@ -9,11 +9,21 @@
 
                         2. Subclass cannot make weaker
                                 postconditions than parent class
+
+        LSP is fundamental to good object-oriented
+                design as it honor polymorphism, with
+                respect of methods on class interface.
 """
 
 
 class Event:
     def __init__(self, raw_data: dict[str, dict]):
+        # Define preconditions by input validation
+        if "before" not in raw_data:
+            raise KeyError("Event dictionary has to contain 'before' key")
+        elif "after" not in raw_data:
+            raise KeyError("Event dictionary has to conatin 'after' key")
+
         self._raw_data = raw_data
 
     def meet_condition(self) -> bool:

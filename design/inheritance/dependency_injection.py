@@ -1,4 +1,7 @@
 """
+        Dependency Incection is adding dependencies dynamically
+                based on requirements changes.
+
         Dependency injection should be used, when there is a need 
             to change method resolution order, without changing a base class.
 """
