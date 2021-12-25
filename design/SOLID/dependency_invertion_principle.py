@@ -4,7 +4,7 @@
                  fragile, volatile or out of control. Code should not require
                  modification in case of fragile parts changes, it should
                  require adding extensions only. It is done by creating
-                API that stands between volatile part and the app.
+                 API that stands between volatile part and the app.
 """
 
 
@@ -37,6 +37,16 @@ class EventStreamer:
 #       which stands between data targets
 #       and its client class.
 class DataTargetClient:
+    def __instancecheck__(cls, instance):
+        # Every subclass of abstract class is recognized
+        #   as its instance
+        return cls.__subclasscheck__(type(instance))
+
+    def __subclasscheck__(cls, subclass):
+        # Every class that has implemented send_data
+        #       method is recognized as DataTargetClient subclass
+        return hasattr(subclass, "send_data") and callable(subclass.send_data)
+
     @classmethod
     def send_data(event: Event):
         ...
