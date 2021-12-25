@@ -28,11 +28,11 @@ class EventStreamer:
 
 # Good design
 # Adding another data target require
-#       new class with which will inherit
-#        from DataTargetClient and has
+#       new class which will inherit
+#       from DataTargetClient and has
 #       implemented send_data method.
-#        It is up to data target to implement
-#        the interface correctly.
+#       It is up to data target to implement
+#       the interface correctly.
 # DataTargetClient is specifying API
 #       which stands between data targets
 #       and its client class.
