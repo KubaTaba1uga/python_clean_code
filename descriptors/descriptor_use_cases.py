@@ -5,7 +5,7 @@
                                 under descriptor interface
                         2. Customized names - inform descriptor which
                                 attribute name was used
-
+\
         The main motivation for descriptors is to provide a hook allowing
          objects stored in class variables to control what happens during
          attribute lookup and setup.
