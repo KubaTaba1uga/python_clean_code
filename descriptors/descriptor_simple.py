@@ -4,9 +4,7 @@
                 2. storage
                 3. deletion
 """
-import os, logging
-
-logging.basicConfig(level=logging.INFO)
+import os
 
 # Static Lookup example
 class Ten:
