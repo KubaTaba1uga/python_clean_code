@@ -1,4 +1,15 @@
+"""
+        Iterable is an object which has __iter__ method implemented
+                (which knows how to produce iterator).
+
+        Iterator is an object which has __next__ method implemented
+                (which knows how to produce values on at a time).
+"""
+
+
 class IterationExample:
+    """Iterable object which is also iterator"""
+
     def __init__(self):
         self.start = 0
         self.stop = 5
@@ -18,7 +29,7 @@ iterator = IterationExample()
 
 
 """
-	Manual example of for loop protocol
+        Manual example of for loop protocol
 """
 print("Manual example of for loop protocol")
 
@@ -27,14 +38,14 @@ real_iterator = iter(iterator)
 
 for i in range(iterator.stop):
     # On each iteration next()
-    #	is revoked
+    # 	is revoked
     next(iterator)
 
 # For loop stops execution when
-#	StopIteration is raised
-#	as iterator is exausted
-#	each next() revoke will
-#	raise error also
+# 	StopIteration is raised
+# 	as iterator is exausted
+# 	each next() revoke will
+# 	raise error also
 try:
     next(iterator)
 except StopIteration:
@@ -50,10 +61,10 @@ for element in iterator:
     pass
 else:
     # Else is revoked after
-    #	for loop end as for
-    #	loop protocol is
-    #	using if in each
-    #	iteration
+    # 	for loop end as for
+    # 	loop protocol is
+    # 	using if in each
+    # 	iteration
     try:
         next(iterator)
     except StopIteration:
