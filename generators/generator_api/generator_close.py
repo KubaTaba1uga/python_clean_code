@@ -14,14 +14,22 @@
 def even_numbers():
     number = 0
     while True:
-        yield number
+
+        try:
+            yield number
+
+        except GeneratorExit as error:
+            print("Generator closed")
+            # raise exception to close generator properly
+            raise GeneratorExit from error
+
         number += 2
 
 
 my_gen = even_numbers()
 for number in my_gen:
 
-    if number > 100000:
+    print(number)
+
+    if number >= 100000:
         my_gen.close()
-    else:
-        print(number)
