@@ -9,7 +9,7 @@ help:
 	@echo "install-dev - create venv and install test-requirements.txt"
 	@echo "clean - remove venv"	
 	@echo "clean-pyc - remove Python file artifacts"
-  @echo "clean-git - remove ignored and not ignored files"
+        @echo "clean-git - remove ignored and not ignored files"
 
 lint:
 	flake8 --ignore $(ignored_err) $(sources)
