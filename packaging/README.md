@@ -16,7 +16,7 @@ To manage project dependency [look](https://setuptools.pypa.io/en/latest/usergui
 
 To trigger installation process use command:
 ```
-python setup.py install
+pip install .
 ```
 
 # Files examples
