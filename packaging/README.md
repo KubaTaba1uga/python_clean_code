@@ -20,7 +20,7 @@ pip install .
 ```
 
 # Files examples
-Setuptools allows using configuration files (usually pyproject.toml) to define a package’s metadata and other options that are normally supplied to the setup() function (declarative config).
+Setuptools allows using configuration files (usually pyproject.toml) to define a package’s metadata and other options that are normally supplied to the setup() function.
 
 ## pyproject.toml
 ```
